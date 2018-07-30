@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Open WYSIWYG</title>
+        <script src="script.js"></script>
+    </head>
+    <body onload="iframe()">
+        <h2>WYSIWYG Editor</h2>
+
+        <form>
+            <input type="button" value="B" onclick="bold()">
+            <input type="button" value="I" onclick="italic()">
+            <input type="button" value="U" onclick="underline()">
+            <input type="button" value="size" onclick="fontSize()">
+            <input type="button" value="color" onclick="color()">
+            <input type="button" value="highlight" onclick="highlight()">
+            <input type="button" value="link" onclick="link()">
+            <input type="button" value="unlink" onclick="unlink()">
+            <br><br>
+            <textarea name="textarea" id="textarea" style="display: none;"></textarea>
+            <iframe name="editor" id="editor" style="width: 500px;height: 400px"></iframe>
+            <br><br>
+            <input type="button" onclick="formsubmit()" value="Post">
+        </form>
+    </body>
+</html>
